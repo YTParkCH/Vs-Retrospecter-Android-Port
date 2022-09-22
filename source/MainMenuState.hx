@@ -99,6 +99,10 @@ class MainMenuState extends MusicBeatState
 					{
 						finishedFunnyMove = true;
 						changeItem();
+
+                                                #if android
+                                                addVirtualPad(UP_DOWN, A_B); //no editors since idk what will happen honestly
+#end
 					}});
 			else
 			{
